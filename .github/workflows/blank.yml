@@ -11,12 +11,7 @@ on:
       environment:
         description: "Select the environment"
         required: true
-        type: choice
-        default: prd
-        options:
-          - prd
-          - dev
-          - stg
+        type: environment
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
